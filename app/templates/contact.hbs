@@ -9,4 +9,9 @@
 	{{textarea value=textArea class="form-control" id="textarea" placeholder="Description" }}
 </div>
 
-<button disabled={{isDisabled}} class="btn btn-primary btn-lg btn-block">Send message</button>
+<button disabled={{isDisabled}} {{action 'sendMessage'}} class="btn btn-primary btn-lg btn-block">Send message</button>
+
+{{#if response}}
+<br><br>
+	<div class="alert alert-success">{{response}}</div>
+{{/if}}
