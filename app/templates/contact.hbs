@@ -1,0 +1,12 @@
+<h1>Contact page</h1>
+<div class="form-group {{inputIsValid}} has-feedback">
+  <label class="control-label" for="inputSuccess2">Put your email here:</label>
+  {{input value=input type="text" class="form-control" id="inputSuccess2" placeholder="Title"}}
+</div>
+
+<div class="form-group {{textAreaIsValid}}">
+	<label class="control-label" for="textarea">Type your description:</label>
+	{{textarea value=textArea class="form-control" id="textarea" placeholder="Description" }}
+</div>
+
+<button disabled={{isDisabled}} class="btn btn-primary btn-lg btn-block">Send message</button>
